@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+.bread {
+        color: #663333;
+        padding: 9px 0 1% 2%;
+        background-color: white;
+        margin-bottom: 1%;
+    }
+    
+    .bread a:link {
+        color: #990000;
+        text-decoration: none;
+    }
+    
+    .bread a:hover {
+        text-decoration: underline;
+    }
+    
+    .bread>h2 {
+        margin: 6px 2em 6px 0px;
+        float: left;
+        text-indent: 1em;
+    }
+	.comments,.experience,.files{
+		float:left;
+		width: 60%;
+		background-color: white;
+		padding:8px;
+		box-sizing:border-box;
+		}
+
+.right_div{
+	float: left;
+    width: 36.27%;
+    margin-left: 1%;
+    margin-right: 0;
+    height: auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    background-color: white;
+		}

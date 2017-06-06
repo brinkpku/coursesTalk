@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+h1 {
+    text-align: center;
+    color: #990000;
+    margin-top: 15px;
+}
+
+
+.course_table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    margin-bottom: 5%;
+    color: #484848;
+}
+
+.table_c {
+    height: auto;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: white;
+    padding: 3px 4px 2px 4px;
+    box-shadow: 0 0 10px #C33D40;
+    border: solid 0.5px #EADCDD;
+}
+
+tr.ji {
+    background-color: #F0F0F0;
+}
+
+tr.ou {
+    background-color: #F9CBCB;
+}
+
+.classtype_choose {
+    text-align: left;
+}
+
+.classtype_choose ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 65%;
+    height: 40px;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.classtype_choose li {
+    width: 8%;
+    height: 40px;
+    float: left;
+}
+
+a.now {
+    background-color: #A52A2A;
+}
+
+.classtype_choose {
+	margin: 5px 0 5px 0;
+}
+.classtype_choose a:link {
+    display: block;
+    width: 64%;
+    height: 50%;
+    line-height: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #F9CBCB;
+    text-align: center;
+    padding: 8px;
+    padding-top: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    border: solid 1px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 9px 0 0, 0 9px 25px rgba(0, 0, 0, 0.7);
+}
+
+.classtype_choose a:visited{
+	color: white;
+}
+.classtype_choose a:hover,
+.classtype_choose a:active {
+    background-color: #990000;
+}
+
+.content_div {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}

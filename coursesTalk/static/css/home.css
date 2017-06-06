@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*顶部导航*/
+.top_bar {
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.top_btn_group{
+    float: right;
+    margin-right: 15%;
+}
+.top_btn {
+    padding: 0;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+    margin-left: 0.5em;
+    background-color: white;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+#login_btn{
+    color: blue;
+    text-decoration: none;
+}
+
+#login_btn:hover,.top_btn:hover{
+    color: #A52F2A;
+}
+
+/*登录后样式*/
+p.uname{
+    color: black;
+}
+/*****************************/
+
+
+.logo {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/*检索框*/
+.search_box {
+    width: 70%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-align: center;
+}
+
+.search_box form {
+    line-height: 40px;
+}
+
+input {
+    width: 50%;
+    /*float: left;*/
+    vertical-align: top;/*对齐*/
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 0.5em;
+    border: solid 1px #A52F2A;
+    outline: 0;
+    
+}
+
+#search_btn {
+    width: 70px;
+    line-height: 30px;
+    background-color: #A52F2A;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: -5px;
+    border: solid 1px #A52F2A;
+    outline: 0;
+    cursor: pointer;
+}
+/************************************/
+
+
+/*通知栏目*/
+.box {
+    width: 70%;
+    margin: 8% auto 5% auto;
+}
+
+.cols {
+    float: left;
+    box-sizing: border-box;
+    background-color: #f1f2f3;
+    margin: 0;
+    margin-left: 2px;
+    width: 33%;
+    height: 290px;/*固定高度以显示同样大小的边框*/
+}
+
+.cols:hover {
+    box-shadow: 0 0 10px #C33D40;
+}
+
+.notice,
+.type,
+.popular{
+    padding: 5px 1em 0px 1em;
+}
+
+.cols a:link,
+.cols a:visited{
+    text-decoration: none;
+    color: #36302b;
+}
+
+.cols a:hover {
+    color: #A52F2A;
+    text-decoration: underline;
+}
+
+.header {
+    padding: 3px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: #A52A2A;
+}
+
+.text,
+.more {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:0.5em;
+}
+
+.more {
+    text-align: right;
+}
+/*#overlay
+{
+	opacity: .2;
+	position: fixed;
+	background-color: #333;
+	height: 280px;
+    width: 580px;
+    margin-left: -284px;
+    margin-top: -178px;
+    top: 50%;
+    left: 50%;
+}*/
+#dialog
+{
+	position: fixed;
+    z-index: 103;
+    padding: 0;
+	width: 562px;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -280px;
+	border: 1px solid #ccc;
+    background-color: white;
+    top: 50%;
+    border-radius: 8px;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+form
+{
+	text-align:center;
+}
+
+
+.input_div
+{
+	    margin: 30px 20px 0;
+		padding:0;
+		text-align:center;
+}
+.form_head h3
+{
+	margin:5px;
+}
+.form_head a:link
+{
+	text-decoration:none;
+}
+
+.dialog-bar{
+    background-color: #A52A2A;
+    color: #eee;
+    text-align: center;
+}
+
+.submit_btn
+{
+	background-color:white;
+	border:none;
+	font-size:18px;
+	margin:20px 0 10px 0;
+	 width: 80px;
+    height: 35px;
+	-webkit-border-radius:2px;
+	border:solid 0.5px #A52F2A;
+	
+}
+.form_div input[type="submit"]{
+    float: none;
+}
+/**********************************/

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>文件详情</title>
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/course.css">
+    <link rel="stylesheet" href="../static/css/c_e_f.css">
+    <script defer="true" type="text/javascript" src="general.js"></script>
+    <style>
+    .content_div {
+        width: 70%;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px 10px 0 10px;
+    }
+    
+    .btn {
+        border: 0;
+        color: #ca6445;
+        background: #fae9da;
+        border-radius: 2px;
+        margin-top: 12px;
+        padding: 3px;
+        float: left;
+        outline: 0;
+    }
+    
+    .btn:hover {
+        background: #fcefe3;
+    }
+    
+    div.item::after {
+        content: '';
+        clear: left;
+        box-sizing: border-box;
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+    }
+    
+    div.item {
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .item p.filename {
+        font-size: 0.8em;
+        text-indent: 2em;
+        margin: 0;
+    }
+    
+    .item p.size {
+        font-size: 0.8em;
+        text-indent: 2em;
+        margin: 0;
+    }
+    
+    .time {
+        color: #aaa;
+        font-size: 0.8em;
+    }
+    
+    .content {
+        text-indent: 2em;
+        font-size: 0.8em;
+        margin-top: 4px;
+        padding-left: 20px;
+        float: left;
+    }
+    
+    .download_btn {
+        border: none;
+        color: #37a;
+        background-color: inherit;
+        font-size: 0.8em;
+        text-indent: 2em;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top_bar">
+        <div class="top_bar_content">
+            <div class="logo_container">
+                <span>
+                    <a href="home.html"><img class="logo" src="../static/pic/logo_s.png"></a>
+                </span>
+                <div class="clean"></div>
+            </div>
+            <div class="container">
+                <p class="home">
+                    <a href="home.html">首页</a>
+                </p>
+            </div>
+            <div class="container">
+                <form class="search" action="" method="get">
+                    <input type="text" name="search" id="search" placeholder="输入课程关键词进行检索…">
+                    <button type="submit">检索</button>
+                </form>
+            </div>
+            <div class="usr_container">
+                <span>
+                    <img src="../static/pic/user.jpg" width="35px" height="35px">
+                </span>
+                <p class="uname">孤独的根号三</p>
+            </div>
+            <div class="clean"></div>
+        </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="/home"><span class="home-icon"></span>我的主页</a>
+            </li>
+            <li>
+                <a href="/setting"><span class="setting-icon"></span>设置</a>
+            </li>
+            <li>
+                <a href="/logout"><span class="logout-icon"></span>退出</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content_div">
+        <div class="bread">
+            <a href=" ">首页</a >&gt;&gt;<a href="experience.html">经验详情页</a>
+            <div class="clean"></div>
+            <h2>悖论研究的资料</h2>
+            <button class="btn" id="item_btn">我要传资料</button>
+            <div class="clean"></div>
+        </div>
+        <div class="files">
+            <div class="clean"></div>
+            <div class="item">
+                <p class="username">孤独的根号三</p><span class="time">（2017-04-29）</span>
+                <p class="filename">三宝历年考试题.pdf</p>
+                <p class="size">大小：2MB</p>
+                <button class="download_btn">点此下载</button>
+            </div>
+            <div class="item">
+                <p class="username">孤独的根号三</p><span class="time">（2017-04-29）</span>
+                <p class="filename">法导复习提纲.pdf</p>
+                <p class="size">大小：2MB</p>
+                <button class="download_btn">点此下载</button>
+            </div>
+            <div class="item">
+                <p class="username">孤独的根号三</p><span class="time">（2017-04-29）</span>
+                <p class="filename">地概计算题整理.pdf</p>
+                <p class="size">大小：0.5MB</p>
+                <button class="download_btn">点此下载</button>
+            </div>
+            <div class="item">
+                <p class="username">孤独的根号三</p><span class="time">（2017-04-29）</span>
+                <p class="filename">全球环境问题讲义整理.pdf</p>
+                <p class="size">大小：10MB</p>
+                <button class="download_btn">点此下载</button>
+            </div>
+            <div class="page_choose">
+                <p>第 <a href=" " target="_blank">1</a >
+                    <a href="/index.html" target="_blank">2</a >
+                    <a href="/index.html" target="_blank">3</a >
+                    <a href="/index.html" target="_blank">4</a >
+                    <a href="/index.html" target="_blank">5</a >
+                    <a href="/index.html" target="_blank">6</a >页</p >
+    </div>
+    </div>
+    <div class="right_div">
+                    <h4 style="color:#37a;font-size:15px">课程简介：</h4>
+                    <p>先修课程：逻辑导论</p>
+                    <p>授课语言：中文</p>
+                    <p>课程简介：究竟什么是悖论？如何定义悖论？已经发现了哪些悖论？悖论能否分类？如何分类？产生悖论的原因是什么？悖论究竟是一种逻辑矛盾，还是所谓的辩 证矛盾或者其他？对于悖论究竟应该采取什么样的态度？是拒斥、消解、容忍还是接纳？一种合理的解悖方案究竟应该满足哪些要求？已有的各种解悖方案 的优劣得失如何？本课程将认真地介绍、讨论与分析这些问题，并阐述教师本 人关于悖论的一些看法。</p>
+                </div>  
+     
+    </div>
+ <div class="bottom_bar">
+        <p>
+            <a class="link" href="/index.html" target="_blank">反馈 </a>|<a class="link" href="/index.html" target="_blank"> 加入我们</a>|<a class="link" href="/index.html" target="_blank"> 联系我们</a>
+                </p>
+                <p>
+                    相关链接：<a class="link" href="http://course.pku.edu.cn" target="_blank"> 教学网</a>|<a class="link" href="http://elective.pku.edu.cn" target="_blank"> 选课网</a>|<a class="link" href="http://lib.pku.edu.cn" target="_blank"> 图书馆</a>|<a class="link" href="http://dean.pku.edu.cn" target="_blank"> 教务网</a>
+                </p>
+                <p>Copyright©brink 2017 地址：北京大学信息管理系</p>
+            </div>
+</body>
+
+</html>

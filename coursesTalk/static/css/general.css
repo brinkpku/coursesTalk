@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*基本样式*/
+
+body {
+    background-color: #f1f2f3;
+    margin: 0;
+}
+
+
+/**************/
+
+
+/*常用设置*/
+
+.clean {
+    clear: both;
+}
+
+.center{
+    text-align: center;
+}
+
+/***************/
+
+
+/*顶部导航栏样式*/
+
+.top_bar {
+    background-color: #A52A2A;
+    color: #eee;
+    text-align: center;
+}
+
+.top_bar_content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_bar_content img {
+    float: left;
+}
+
+.top_bar_content>* {
+    line-height: 50px;
+    /*指定行高方式垂直居中*/
+}
+
+.top_bar_content p {
+    margin: 0;
+}
+
+div.container,
+div.logo_container,
+div.usr_container {
+    display: table;
+    float: left;
+    height: 50px;
+    margin: 0;
+    margin-right: 8px;
+}
+
+div.logo_container {
+    padding-right: 25px;
+}
+
+div.usr_container {
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0;
+    /*覆盖上面的边距*/
+    cursor: pointer;
+}
+
+div.usr_container:hover {
+    background: #831717;
+}
+
+div.logo_container span,
+div.usr_container span {
+    display: table-cell;
+    /*以表格方式实现图片上下居中*/
+    vertical-align: middle;
+}
+
+p.home>a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.container button {
+    border: 1px solid #c34747;
+    box-sizing: border-box;
+    padding: 5px;
+    line-height: 17px;
+    position: relative;
+    left: -7px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: 0;
+    /*去除点击时的边框*/
+    cursor: pointer;
+    color: #eee;
+    background-color: rgba(182, 59, 59, .9);
+}
+
+.container input {
+    padding: 5px 50px 5px 10px;
+    color: #49525c;
+    line-height: 17px;
+    background-color: #e1eaf2;
+    border: 1px solid #c34747;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1);
+    box-sizing: border-box;
+    outline: 0;
+    /*去除点击时的边框*/
+}
+
+.container input:focus {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 15px rgba(255, 255, 255, .3);
+}
+
+.usr_container img {
+    /*头像样式设置*/
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+p.uname {
+    float: right;
+    margin-left: 4px;
+}
+
+
+/*下拉菜单*/
+
+#menu {
+    position: absolute;
+    float: right;
+    /*与顶部导航usr_container对齐*/
+    /*width: 147px;已通过js设置*/
+    /***************************/
+    text-align: center;
+    background-color: #831717;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    /*z-index: 999;*/
+}
+
+#menu a {
+    color: #eee;
+    text-decoration: none;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu li {
+    padding: 5px;
+    border-top: 0.5px solid rgba(0, 0, 0, .2);
+    border-radius: 0 0 3px 3px;
+}
+
+#menu li:hover {
+    background-color: #A52A2A
+}
+
+.home-icon,
+.setting-icon,
+.logout-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    vertical-align: -7px;
+    background-image: url(../pic/icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.home-icon {
+    background-position: -6px -7px;
+}
+
+.setting-icon {
+    background-position: -6px -60px;
+}
+
+.logout-icon {
+    background-position: -6px -87px;
+}
+
+
+/**********************/
+
+
+/*底部导航栏样式*/
+
+.bottom_bar {
+    border: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.bottom_bar>p {
+    margin: 4px;
+    font-size: 0.85em;
+    color: white !important;
+}
+
+.link {
+    text-decoration: none;
+    color: white !important;
+}
+
+a.link:hover {
+    color: rgb(215, 130, 87) !important;
+}
+
+
+/***********************/
+
+
+/*翻页样式*/
+
+div.page_choose {
+    margin-bottom: 10px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.page_choose a:link {
+    color: #990000;
+    text-decoration: none;
+}
+
+div.page_choose a:hover {
+    text-decoration: underline;
+}
+
+div.page_choose>p {
+    margin: 0;
+}
+
+
+/***********************/
+
+/*弹窗样式，整理自course页面*/
+#mask {
+    /*遮罩层*/
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 33;
+}
+
+.dialog-bar {
+    line-height: 30px;
+    border-radius: 6px 6px 0 0;
+}
+
+.dialog-title {
+    margin: 0;
+    margin-left: 8px;
+    float: left;
+}
+
+.close {
+    background-image: url(../pic/icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    width: 30px;
+    height: 30px;
+    /*line-height: 30px;*/
+    cursor: pointer;
+    background-position: -60px -53px;
+}
+
+.tip_div {
+    padding-top: 5px;
+    margin: 0;
+    width: 100%;
+}
+
+.tip_div span {
+    font-size: 12px;
+    color: gray;
+    float: right;
+    padding-right: 4%;
+}
+
+.tip_div p {
+    margin: 0;
+    font-size: 0.8em;
+    color: Brown;
+}
+
+.form_div {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 4% 5px 4%;
+    margin: 0;
+}
+
+.form_div input[type="submit"] {
+    float: right;
+    border: 1px solid #c34747;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    border-radius: 4px;
+    outline: 0;
+    /*去除点击时的边框*/
+    cursor: pointer;
+    color: #eee;
+    background-color: rgba(182, 59, 59, .9);
+}
+/************************************************/

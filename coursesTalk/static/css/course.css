@@ -1,0 +1,327 @@
+@charset "utf8";
+
+/*页面中间(除顶部、底部导航)的div*/
+
+div.content_div a:link {
+    text-decoration: none;
+    color: #37a;
+}
+
+div.content_div a:visited {
+    color: #666699;
+}
+
+div.content_div a:hover,
+.username:hover {
+    color: white;
+    background-color: #37a;
+}
+
+
+/******************************/
+
+.course_info,
+.comments_div,
+.experience_div,
+.files_div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*课程信息div相关样式*/
+
+.course_info {
+    padding: 5px;
+}
+
+.course_info h3,
+.course_info h4 {
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.course_info p {
+    text-indent: 2em;
+    margin-top: 0.5em;
+}
+
+
+/************************/
+
+#fulltext {
+    font-size: .85em;
+    /*background-color: #37a;*/
+    color: #37a;
+    opacity: .7;
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+    float: right;
+    border-radius: 3px;
+    position: relative;
+    top: -18px;
+}
+
+#fulltext:hover {
+    /*background-color: #36a;*/
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+
+/*旧版显示更多
+    #fulltext {
+        display: block;
+        background-color: #e5e5e5;
+        border: none;
+        width: 70%;
+        height: 2.5em;
+        margin: 0 auto 1em auto;
+    }
+    
+    #fulltext:hover {
+        background-color: #f7f7f7;
+        color: black;
+        font-weight: bold;
+        box-shadow: 0.5px 0.5px 1px 0.5px rgba(0, 0, 0, .3);
+    }*/
+
+.comments_div,
+.experience_div,
+.files_div {
+    margin-bottom: 5px;
+    background-color: white;
+    border-bottom: 0.5px solid gray;
+    border-top: 0.5px solid gray;
+    padding: 5px 10px 0 10px;
+}
+
+.comments_div>h4,
+.experience_div>h4,
+.files_div>h4 {
+    float: left;
+    font-size: 1.1em;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.total_num {
+    font-size: 0.8em;
+}
+
+
+/*用户发表短评/经验/资料按钮样式*/
+
+.btn {
+    border: 0;
+    color: #ca6445;
+    background: #fae9da;
+    border-radius: 2px;
+    margin-top: 6px;
+    padding: 5px;
+    float: right;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fcefe3;
+}
+
+
+/*item为用户发表的一条评论/经验/资料，此伪对象添加分割线*/
+
+div.item::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.username {
+    float: left;
+    margin: 0;
+    color: #37a;
+}
+
+.time {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+
+/*课程经验评分*/
+
+.rating0,
+.rating01,
+.rating1,
+.rating11,
+.rating2,
+.rating21,
+.rating3,
+.rating31,
+.rating4,
+.rating41,
+.rating5 {
+    display: inline-block;
+    background: url("../pic/rating_s.png") no-repeat;
+    width: 55px;
+    height: 11px;
+    margin: 0 3px 0 2px;
+    overflow: hidden;
+}
+
+.rating0 {
+    background-position: 0 -110px;
+}
+
+.rating01 {
+    background-position: 0 -99px;
+}
+
+.rating1 {
+    background-position: 0 -88px;
+}
+
+.rating11 {
+    background-position: 0 -77px;
+}
+
+.rating2 {
+    background-position: 0 -66px;
+}
+
+.rating21 {
+    background-position: 0 -55px;
+}
+
+.rating3 {
+    background-position: 0 -44px;
+}
+
+.rating31 {
+    background-position: 0 -33px;
+}
+
+.rating4 {
+    background-position: 0 -22px;
+}
+
+.rating41 {
+    background-position: 0 -11px;
+}
+
+.rating5 {
+    background-position: 0 0;
+}
+
+
+/*******************************/
+
+.content {
+    text-indent: 2em;
+    font-size: 0.8em;
+    margin-top: 4px;
+}
+
+.file_url {
+    margin-top: 4px;
+    font-size: 0.8em;
+    text-indent: 2em;
+}
+
+.file_url>a:link {
+    color: #37a;
+    background-color: none;
+}
+
+.file_url>a:hover {
+    color: white;
+    background-color: #37a;
+}
+
+
+/*弹窗相关样式*/
+
+#comment_form,
+#experience_form,
+#file_form {
+    width: 50%;
+    position: fixed;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 5px 27px rgba(0, 0, 0, 0.3);
+    z-index: 44;
+    display: none;
+}
+
+#comment_form textarea,
+#experience_form textarea,
+#file_form textarea {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .03), inset 0 3px 0 0 rgba(0, 0, 0, .02);
+    border: 1px solid #eeeeee;
+    font-size: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    outline: none;
+    resize: none;
+}
+
+#comment_form,
+#file_form {
+    height: 200px;
+    top: 30%;
+}
+
+
+#comment_form textarea {
+    height: 110px;
+}
+
+#experience_form {
+    height: 610px;
+    top: 1px;
+}
+
+#experience_form textarea {
+    height: 150px;
+}
+
+#experience_form textarea:focus {
+    border: 1px solid #aaa;
+}
+
+input[type="file"]{
+    display: inline-block;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border-radius: 4px;
+    outline: none;
+}
+
+.center{
+    margin-top: 60px;/*file_form内容*/
+}
+
+#file_form input[type="submit"] {
+    /*font-size: 1.1em;*/
+    float: none;/*覆盖浮动*/
+}
+
+.rating {
+    padding-top: 5px;
+    font-size: 0.9em;
+}
