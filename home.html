@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <style type="text/css">
+    body {
+        background-color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="dialog">
+        <div class="top_bar dialog-bar">
+            <h4 class="dialog-title">用户登录</h4>
+            <span class="close"></span>
+            <div class="clean"></div>
+        </div>
+        <div class="form_div">
+            <form action="">
+                <div class="input_div">
+                    <label>账号
+                        <input type="text" name="username">
+                    </label>
+                </div>
+                <div class="input_div">
+                    <label>密码
+                        <input type="password" name="username">
+                    </label>
+                </div>
+                <input class="submit_btn" type="submit" name="login" value="登录">
+            </form>
+        </div>
+    </div>
+    <div class="top_bar">
+        <div class="top_btn_group">
+            <button class="top_btn" id="login_btn">登录</button>
+            <button class="top_btn">联系我们</button>
+            <button class="top_btn">关于我们</button>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("login_btn").onclick=function(){
+                document.getElementById("dialog").style.display="block";    
+            }
+        </script>
+        <div class="top_bar_content" style="display:none">
+            <div class="usr_container">
+                <span>
+            <img src="../static/pic/user.jpg" width="35px" height="35px">
+          </span>
+                <p class="uname">孤独的根号三</p>
+            </div>
+        </div>
+    </div>
+    <div class="logo"><img src="../static/pic/title.png" alt="CoursesTalk">
+    </div>
+    <div class="search_box">
+        <form method="get" action="s.html">
+            <input type="text" placeholder="输入课程关键词进行检索…" name="search">
+            <input id="search_btn" type="submit" value="检索" name="search">
+        </form>
+        <div class="clean"></div>
+    </div>
+    <div class="box">
+        <div class="cols">
+            <p class="header">通知中心</p>
+            <div class="notice">
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1495420990">
+                            关于本学期末办理英文成绩单时间调整及2017届本科毕业生办理英文成绩单和学历证明安排的通知
+                        </a></p>
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1495412482">
+                          浙江大学C9暑期学校报名名单公示
+                        </a></p>
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1495010975">
+                        西安交通大学第八届“C9暑期学校”报名通知
+                    </a></p>
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1495010208">
+                            浙江大学“C9暑期学校”报名通知
+                        </a></p>
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1494923340">
+                            关于2016－2017学年第二学期期末考试工作安排的通知
+                        </a></p>
+                <p class="text"><a href="http://dean.pku.edu.cn/notice/notice_show.php?id=1494463564">
+                            复旦大学暑期学校入选名单
+                        </a></p>
+                <p class="more"><a href="http://dean.pku.edu.cn/pkudean/index.html">
+                            &gt;&gt;更多...
+                        </a></p>
+            </div>
+        </div>
+        <div class="cols">
+            <p class="header">课程目录</p>
+            <div class="type">
+                <p class="text"><a class="one" href="course_type.html">
+                            A类 数学与自然科学
+                        </a></p>
+                <p class="text"><a href="course_type.html">
+                            B类 社会科学
+                        </a></p>
+                <p class="text"> <a href="course_type.html">
+                            C类 哲学与心理学
+                        </a>
+                </p>
+                <p class="text"> <a href="course_type.html">
+                            D类 历史学
+                        </a></p>
+                <p class="text"> <a href="course_type.html">
+                            E类 语言学、文学、艺术与美育
+                        </a></p>
+                <p class="text"> <a href="course_type.html">
+                            F类 社会发展
+                        </a></p>
+            </div>
+        </div>
+        <div class="cols">
+            <p class="header">热门课程</p>
+            <div class="popular">
+                <p class="text"> <a href="course.html">
+                            地震概论
+                        </a></p>
+                <p class="text"> <a href="course.html">
+                            中日文化交流史
+                        </a></p>
+                <p class="text"> <a href="course.html">
+                            中外名曲赏析
+                        </a></p>
+                <p class="text"><a href="course.html">
+                            地球历史概要
+                        </a></p>
+                <p class="text"><a href="course.html">
+                            艺术史
+                        </a></p>
+                <p class="text"> <a href="course.html">
+                            法律导论
+                        </a></p>
+                <p class="more"> <a href="http://dean.pku.edu.cn/pkudean/index.html">
+                            &gt;&gt;更多...
+                        </a></p>
+            </div>
+        </div>
+        <div class="clean"></div>
+    </div>
+    <div class="bottom_bar" style="display: none;">
+        <p>
+            <a class="link" href="/index.html" target="_blank">反馈 </a>|<a class="link" href="/index.html" target="_blank"> 加入我们 </a>|<a class="link" href="/index.html" target="_blank"> 联系我们</a>
+        </p>
+        <p>
+            相关链接：<a class="link" href="http://course.pku.edu.cn" target="_blank"> 教学网 </a>|<a class="link" href="http://elective.pku.edu.cn" target="_blank"> 选课网 </a>|<a class="link" href="http://lib.pku.edu.cn" target="_blank"> 图书馆 </a>|<a class="link" href="http://dean.pku.edu.cn" target="_blank"> 教务网</a>
+        </p>
+        <p>Copyright©brink 2017 地址：北京大学信息管理系</p>
+    </div>
+</body>
+
+</html>
