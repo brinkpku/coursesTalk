@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="../static/css/general.css">
     <link rel="stylesheet" href="../static/css/home.css">
+    <script defer="true" type="text/javascript" src="../static/js/home.js"></script>
     <style type="text/css">
     body {
         background-color: white;
@@ -21,7 +22,7 @@
             <div class="clean"></div>
         </div>
         <div class="form_div">
-            <form action="">
+            <form action="profile.html">
                 <div class="input_div">
                     <label>账号
                         <input type="text" name="username">
@@ -42,11 +43,6 @@
             <button class="top_btn">联系我们</button>
             <button class="top_btn">关于我们</button>
         </div>
-        <script type="text/javascript">
-            document.getElementById("login_btn").onclick=function(){
-                document.getElementById("dialog").style.display="block";    
-            }
-        </script>
         <div class="top_bar_content" style="display:none">
             <div class="usr_container">
                 <span>
