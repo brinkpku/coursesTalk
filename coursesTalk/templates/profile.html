@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/css/general.css">
     <link rel="stylesheet" href="../static/css/profile.css">
     <script defer="true" type="text/javascript" src="../static/js/general.js"></script>
+    <script defer="true" type="text/javascript" src="../static/js/profile.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             </div>
             <div class="change_info">
                 <div class="input_div">
-                    <label for="nickname">昵称:
+                    <label>昵称:
                     <input type="text" name="nickname"/>
                     </label>
                 </div>
@@ -43,7 +44,6 @@
                 <input type="submit" name="save" value="保存">
             </div>
                 <div class="clean"></div>
-
         </form>
 
         </div>
@@ -58,11 +58,11 @@
             </div>
             <div class="container">
                 <p class="home">
-                    <a href="home.html">首页</a>
+                    <a href="/">首页</a>
                 </p>
             </div>
             <div class="container">
-                <form class="search" action="" method="get">
+                <form class="search" action="/s" method="get">
                     <input type="text" name="search" id="search" placeholder="输入课程关键词进行检索…">
                     <button type="submit">检索</button>
                 </form>
@@ -80,8 +80,8 @@
         <ul>
             <li><a href="/home"><span class="home-icon"></span>我的主页</a>
             </li>
-            <li>
-                <a href="/setting"><span class="setting-icon"></span>设置</a>
+            <li id="setting">
+                <a href="#"><span class="setting-icon"></span>设置</a>
             </li>
             <li>
                 <a href="/logout"><span class="logout-icon"></span>退出</a>
@@ -103,24 +103,24 @@
                     </ul>
                 </div>
                 <div class="editinfo">
-                    <button class="edit_btn">编辑个人信息</button>
+                    <button onclick="" class="edit_btn">编辑个人信息</button>
                 </div>
             </div>
         </div>
         <div class="content_div">
             <div class="box">
                 <div class="header">
-                    <div class="history">
+                    <div id="t1" class="history">
                         <button class="tab_btn">选课历史</button>
                     </div>
-                    <div class="recommend">
+                    <div id="t2" class="recommend">
                         <button class="tab_btn">课程推荐</button>
                     </div>
-                    <div class="experience">
+                    <div id="t3" class="experience">
                         <button class="tab_btn">经验分享</button>
                     </div>
                 </div>
-                <div class="innerbox_his">
+                <div id="1" class="innerbox_his">
                     <p>我的选课历史</p>
                     <table>
                         <th>课程名</th>
@@ -149,7 +149,7 @@
                     </table>
                     <p>仍需选修D、E、F类课程</p>
                 </div>
-                <div class="innerbox_recommand">
+                <div id="2" class="innerbox_recommand">
                     <table>
                         <th>课程名</th>
                         <th>课程类别</th>
@@ -181,7 +181,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="innerbox_experience">
+                <div id="3" class="innerbox_experience">
                     <h4>我的经验分享</h4>
                     <table class="text">
                         <th>课程名</th>
@@ -216,6 +216,30 @@
             </div>
         </div>
     </div>
+    <script>
+        let a=document.getElementById('1');
+        let b=document.getElementById('2');
+        let c=document.getElementById('3');
+        let t1=document.getElementById('t1');
+        let t2=document.getElementById('t2');
+        let t3=document.getElementById('t3');
+        handle(a);
+        function handle(t){
+            a.style.display="none";
+            b.style.display="none";
+            c.style.display="none";
+            t.style.display="block";
+        }
+        t1.onmouseover=function(){
+        handle(a);
+        };
+        t2.onmouseover=function(){
+        handle(b);
+        };
+        t3.onmouseover=function(){
+        handle(c);
+        }
+    </script>
     <div class="bottom_bar">
         <p>
             <a class="link" href="/index.html" target="_blank">反馈 </a>|<a class="link" href="/index.html" target="_blank"> 加入我们 </a>|<a class="link" href="/index.html" target="_blank"> 联系我们</a>

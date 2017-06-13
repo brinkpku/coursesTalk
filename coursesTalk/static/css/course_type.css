@@ -16,6 +16,7 @@ h1 {
     align-self: center;
     margin-bottom: 5%;
     color: #484848;
+    display: none;
 }
 
 .table_c {

@@ -7,165 +7,693 @@
     <link rel="stylesheet" type="text/css" href="../static/css/general.css">
     <link rel="stylesheet" type="text/css" href="../static/css/course_type.css">
     <script defer="true" type="text/javascript" src="../static/js/general.js"></script>
+    <style>
+        td a:link{
+        color:#484848;
+        text-decoration:none;
+        }
+        td a:visited{
+        color:#484848;
+        }
+        td a:hover{
+        text-decoration:underline;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="top_bar">
-        <div class="top_bar_content">
-            <div class="logo_container">
+<div class="top_bar">
+    <div class="top_bar_content">
+        <div class="logo_container">
                 <span>
                     <a href="home.html"><img class="logo" src="../static/pic/logo_s.png"></a>
                 </span>
-                <div class="clean"></div>
-            </div>
-            <div class="container">
-                <p class="home">
-                    <a href="home.html">首页</a>
-                </p>
-            </div>
-            <div class="container">
-                <form class="search" action="" method="get">
-                    <input type="text" name="search" id="search" placeholder="输入课程关键词进行检索…">
-                    <button type="submit">检索</button>
-                </form>
-            </div>
-            <div class="usr_container">
+            <div class="clean"></div>
+        </div>
+        <div class="container">
+            <p class="home">
+                <a href="/home">首页</a>
+            </p>
+        </div>
+        <div class="container">
+            <form class="search" action="/s" method="get">
+                <input type="text" name="search" id="search" placeholder="输入课程关键词进行检索…">
+                <button type="submit">检索</button>
+            </form>
+        </div>
+        <div class="usr_container">
                 <span>
                     <img src="../static/pic/user.jpg" width="35px" height="35px">
                 </span>
-                <p class="uname">孤独的根号三</p>
-            </div>
-            <div class="clean"></div>
+            <p class="uname">孤独的根号三</p>
         </div>
+        <div class="clean"></div>
     </div>
-    <div id="menu">
+</div>
+<div id="menu">
+    <ul>
+        <li><a href="/home"><span class="home-icon"></span>我的主页</a>
+        </li>
+        <li>
+            <a href="/setting"><span class="setting-icon"></span>设置</a>
+        </li>
+        <li>
+            <a href="/logout"><span class="logout-icon"></span>退出</a>
+        </li>
+    </ul>
+</div>
+<div class="content_div">
+    <div class="classtype_choose">
         <ul>
-            <li><a href="/home"><span class="home-icon"></span>我的主页</a>
-            </li>
-            <li>
-                <a href="/setting"><span class="setting-icon"></span>设置</a>
-            </li>
-            <li>
-                <a href="/logout"><span class="logout-icon"></span>退出</a>
-            </li>
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+            <li><a href="#">F</a></li>
         </ul>
     </div>
-    <div class="content_div">
-        <div class="classtype_choose">
-            <ul>
-                <li><a class="now" href="course.html">A</a></li>
-                <li><a href="course.html">B</a></li>
-                <li><a href="course.html">C</a></li>
-                <li><a href="course.html">D</a></li>
-                <li><a href="course.html">E</a></li>
-                <li><a href="course.html">F</a></li>
-            </ul>
-        </div>
-        <div class="course_table">
-            <h1>A类 数学与自然科学</h1>
-            <table class="table_c">
-                <tr class="ji">
-                    <td>大气概论</td>
-                    <td>大气化学</td>
-                    <td>保护生物学</td>
-                </tr>
-                <tr class="ou">
-                    <td>地球环境与人类社会</td>
-                    <td>地球历史概要</td>
-                    <td>地史中的生命</td>
-                </tr>
-                <tr class="ji">
-                    <td>地震概论</td>
-                    <td>电子资源的检索与利用</td>
-                    <td>公共物理学</td>
-                </tr>
-                <tr class="ou">
-                    <td>功能化学</td>
-                    <td>古今数学思想</td>
-                    <td>海洋科学导论</td>
-                </tr>
-                <tr class="ji">
-                    <td>化学与社会</td>
-                    <td>环境材料导论</td>
-                    <td>环境科学导论</td>
-                </tr>
-                <tr class="ou">
-                    <td>环境伦理概论</td>
-                    <td>环境生态学</td>
-                    <td>今日物理</td>
-                </tr>
-                <tr class="ji">
-                    <td>今日新材料</td>
-                    <td>科学是什么</td>
-                    <td>科学通史</td>
-                </tr>
-                <tr class="ou">
-                    <td>矿产资源经济概论</td>
-                    <td>理论物理导论</td>
-                    <td>魅力化学</td>
-                </tr>
-                <tr class="ji">
-                    <td>纳米科学前沿</td>
-                    <td>普通生物学（A）</td>
-                    <td>普通生物学（B）</td>
-                </tr>
-                <tr class="ou">
-                    <td>普通生物学实验</td>
-                    <td>普通统计学</td>
-                    <td>全球环境变化</td>
-                </tr>
-                <tr class="ji">
-                    <td>人类的性、生育与健康</td>
-                    <td>人类生存发展与核科学</td>
-                    <td>人类生存发展与环境保护</td>
-                </tr>
-                <tr class="ou">
-                    <td>人类生物学导论</td>
-                    <td>社会科学中的计算思维方法</td>
-                    <td>生态学导论</td>
-                </tr>
-                <tr class="ji">
-                    <td>生物进化论</td>
-                    <td>世界文化地理</td>
-                    <td>数值方法：原理、算法及应用</td>
-                </tr>
-                <tr class="ou">
-                    <td>数字化艺术</td>
-                    <td>太空探索</td>
-                    <td>微电子学概论</td>
-                </tr>
-                <tr class="ji">
-                    <td>物理宇宙学基础</td>
-                    <td>系统与控制引论</td>
-                    <td>现代天文学</td>
-                </tr>
-                <tr class="ou">
-                    <td>心理学概论</td>
-                    <td>演示物理学</td>
-                    <td>遥感入门</td>
-                </tr>
-                <tr class="ji">
-                    <td>医学发展概论</td>
-                    <td>中国历史地理</td>
-                    <td>中国自然地理</td>
-                </tr>
-                <tr class="ou">
-                    <td>自然保护学</td>
-                    <td>自然科学中的混沌和分形</td>
-                    <td>自然资源与社会发展</td>
-                </tr>
-            </table>
-        </div>
+    <div id="A" class="course_table">
+        <h1>A类 数学与自然科学</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/00432270">大气概论</a></td>
+                <td><a href="/course/01035090">大学化学</a></td>
+                <td><a href="/course/01130960">保护生物学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01430950">地球环境与人类社会</a></td>
+                <td><a href="/course/01231210">地球历史概要</a></td>
+                <td><a href="/course/01430020">地史中的生命</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01233170">地震概论</a></td>
+                <td><a href="/course/03033246">电子资源的检索与利用</a></td>
+                <td><a href="/course/00437170">公共物理学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01033100">功能化学</a></td>
+                <td><a href="/course/00131560">古今数学思想</a></td>
+                <td><a href="/course/12638010">海洋科学导论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01034040">化学与社会</a></td>
+                <td><a href="/course/12731050">环境材料导论</a></td>
+                <td><a href="/course/12731030">环境科学导论</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/12731060">环境伦理概论</a></td>
+                <td><a href="/course/00432266">环境生态学</a></td>
+                <td><a href="/course/00434441">今日物理</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01033090">今日新材料</a></td>
+                <td><a href="/course/01139710">科学是什么</a></td>
+                <td><a href="/course/02335132">科学通史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01231130">矿产资源经济概论</a></td>
+                <td><a href="/course/00432530">理论物理导论</a></td>
+                <td><a href="/course/01034030">魅力化学</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/00434091">纳米科学前沿</a></td>
+                <td><a href="/course/01139380">普通生物学(A)</a></td>
+                <td><a href="/course/01139350">普通生物学(B)</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01130311">普通生物学实验</a></td>
+                <td><a href="/course/00136700">普通统计学</a></td>
+                <td><a href="/course/12731070">全球环境变化</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01130871">人类的性、生育与健康</a></td>
+                <td><a href="/course/00430171">人类生存发展与核科学</a></td>
+                <td><a href="/course/12731010">人类生存发展与环境保护</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01130500">人类生物学导论</a></td>
+                <td><a href="/course/04832680">社会科学中的计算思维方法</a></td>
+                <td><a href="/course/01536820">生态学导论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01130780">生物进化论</a></td>
+                <td><a href="/course/01339180">世界文化地理</a></td>
+                <td><a href="/course/00136540">数值方法：原理，算法及应用</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04830390">数字化艺术</a></td>
+                <td><a href="/course/00539410">太空探索</a></td>
+                <td><a href="/course/04831510">微电子学概论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/00434070">物理宇宙学基础</a></td>
+                <td><a href="/course/00331480">系统与控制引论</a></td>
+                <td><a href="/course/00432265">现代天文学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01639020">心理学概论</a></td>
+                <td><a href="/course/00430109">演示物理学</a></td>
+                <td><a href="/course/01235110">遥感入门</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/89139790">医学发展概论</a></td>
+                <td><a href="/course/01339320">中国历史地理</a></td>
+                <td><a href="/course/01539350">中国自然地理</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01534230">自然保护学</a></td>
+                <td><a href="/course/00432268">自然科学中的混沌和分形</a></td>
+                <td><a href="/course/01231200">自然资源与社会发展</a></td>
+            </tr>
+        </table>
     </div>
-    <div class="bottom_bar">
-        <p>
-            <a class="link" href="/index.html" target="_blank">反馈 </a>|<a class="link" href="/index.html" target="_blank"> 加入我们 </a>|<a class="link" href="/index.html" target="_blank"> 联系我们</a>
-        </p>
-        <p>
-            相关链接：<a class="link" href="http://course.pku.edu.cn" target="_blank"> 教学网 </a>|<a class="link" href="http://elective.pku.edu.cn" target="_blank"> 选课网 </a>|<a class="link" href="http://lib.pku.edu.cn" target="_blank"> 图书馆 </a>|<a class="link" href="http://dean.pku.edu.cn" target="_blank"> 教务网</a>
-        </p>
-        <p>Copyright©brink 2017 地址：北京大学信息管理系</p>
+    <div id="B" class="course_table">
+        <h1>B类 社会科学</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/04130300">奥林匹克文化</a></td>
+                <td><a href="/course/06239000">博弈与社会</a></td>
+                <td><a href="/course/60730320">当代国防</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02432130">当代国际政治</a></td>
+                <td><a href="/course/02939999">法律导论</a></td>
+                <td><a href="/course/02930860">法学流派与思潮</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02930905">犯罪通论</a></td>
+                <td><a href="/course/02533250">公共经济学</a></td>
+                <td><a href="/course/02830290">管理学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02330540">管理哲学</a></td>
+                <td><a href="/course/03033220">广告学概论</a></td>
+                <td><a href="/course/02431910">国际关系与东亚安全</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02930985">国际人权法</a></td>
+                <td><a href="/course/89339770">健康的生活方式与健康传播</a></td>
+                <td><a href="/course/03130400">教育社会学思考</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02834020">金融学概论</a></td>
+                <td><a href="/course/06232000">经济学原理</a></td>
+                <td><a href="/course/01831990">跨文化交流学</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02431560">美国文化与社会</a></td>
+                <td><a href="/course/02832220">民商法</a></td>
+                <td><a href="/course/03131360">民族与社会</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02138870">明清经济与社会</a></td>
+                <td><a href="/course/03131760">人口资源环境社会学</a></td>
+                <td><a href="/course/03130940">人类学导论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03131860">人类学导论</a></td>
+                <td><a href="/course/02131490">日本及日本人论</a></td>
+                <td><a href="/course/03232080">日本经济</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04832680">社会科学中的计算思维方法</a></td>
+                <td><a href="/course/02533940">社会企业家精神培养实验</a></td>
+                <td><a href="/course/03131600">社会调查研究方法</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03130280">社会性别研究</a></td>
+                <td><a href="/course/03131160">社会学导论</a></td>
+                <td><a href="/course/03131850">社会学导论</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/03131640">生物学对社会科学的启示</a></td>
+                <td><a href="/course/03530350">圣经概述和导读</a></td>
+                <td><a href="/course/01339180">世界文化地理</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02431730">世界政治中的民族问题</a></td>
+                <td><a href="/course/00332360">数据、模型与决策</a></td>
+                <td><a href="/course/60730330">孙子兵法导读</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02431940">台湾政治概论</a></td>
+                <td><a href="/course/02530160">外国经济史</a></td>
+                <td><a href="/course/02930530">外国宪法</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02930105">外国刑法</a></td>
+                <td><a href="/course/02431890">晚清对外关系的历史与人物</a></td>
+                <td><a href="/course/02838360">微观经济学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02431690">心理、行为与文化</a></td>
+                <td><a href="/course/02930989">刑法学</a></td>
+                <td><a href="/course/04630030">学术规范与论文写作</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02431710">亚太概论</a></td>
+                <td><a href="/course/02433200">伊斯兰与世界政治</a></td>
+                <td><a href="/course/02431590">印度社会与文化</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02939991">英美侵权法</a></td>
+                <td><a href="/course/02832600">营销学原理</a></td>
+                <td><a href="/course/01833330">影像与社会</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01834080">影像与中国社会</a></td>
+                <td><a href="/course/02131480">战后东亚政治发展</a></td>
+                <td><a href="/course/03230900">政治学原理</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02431850">中东：政治、社会与文化</a></td>
+                <td><a href="/course/02431880">中东地区的国家关系</a></td>
+                <td><a href="/course/02431610">中国边疆问题概论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131150">中国婚姻、家庭与社会</a></td>
+                <td><a href="/course/02533730">中国经济导论</a></td>
+                <td><a href="/course/06239070">中国经济改革与发展</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/03132120">中国社会：结构与变迁</a></td>
+                <td><a href="/course/02431580">中国政治概论</a></td>
+                <td><a href="/course/03230870">中国政治与政府过程</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02532590">中华人民共和国经济史</a></td>
+                <td><a href="/course/02431930">中苏关系及其对中国社会发展的影响</a></td>
+                <td><a href="/course/03834100">中西文化比较</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04031700">周易精读</a></td>
+                <td><a href="/course/03131410">自杀社会问题研究</a></td>
+                <td><a href="/course/01833500">公民社会与非营利组织概论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/01830480">广告学概论</a></td>
+                <td><a href="/course/02530060">微观经济学</a></td>
+        </table>
     </div>
+    <div id="C" class="course_table">
+        <h1>C类 哲学与心理学</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/01630740">爱的心理学</a></td>
+                <td><a href="/course/01635060">大学生心理健康</a></td>
+                <td><a href="/course/02331271">悖论研究</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02335220">《四书》精读</a></td>
+                <td><a href="/course/02332141">东正教艺术</a></td>
+                <td><a href="/course/02333100">分析哲学概论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02332311">佛教导论</a></td>
+                <td><a href="/course/02330540">管理哲学</a></td>
+                <td><a href="/course/02334020">环境伦理学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02332042">基督教和中国文化</a></td>
+                <td><a href="/course/02333400">近代西方哲学</a></td>
+                <td><a href="/course/02335202">孔子与老子</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02330142">伦理学导论</a></td>
+                <td><a href="/course/02330030">逻辑导论</a></td>
+                <td><a href="/course/02331310">逻辑与批判性思维</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02330501">美国环境思想</a></td>
+                <td><a href="/course/01630044">社会心理学</a></td>
+                <td><a href="/course/02335330">世界文明中的科学技术</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02332323">坛经</a></td>
+                <td><a href="/course/02335260">文学与伦理</a></td>
+                <td><a href="/course/02330800">西方美学史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02336161">西方思想经典（二）</a></td>
+                <td><a href="/course/02336162">西方思想经典(三)</a></td>
+                <td><a href="/course/02336160">西方思想经典(一)</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03835200">西方学术精华概论</a></td>
+                <td><a href="/course/02330050">西方哲学导论</a></td>
+                <td><a href="/course/02335060">西方哲学史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02333373">西方政治思想（古代）</a></td>
+                <td><a href="/course/02332211">西方政治思想（中世纪）</a></td>
+                <td><a href="/course/02333331">现代中国的建立：制度、思潮与人物</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02930760">心理卫生学概论</a></td>
+                <td><a href="/course/01639020">心理学概论</a></td>
+                <td><a href="/course/02332013">印度佛教史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02330000">哲学导论</a></td>
+                <td><a href="/course/02336170">哲学与人生</a></td>
+                <td><a href="/course/02333371">政治哲学</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02332336">中国佛教史</a></td>
+                <td><a href="/course/02335040">中国古代思想世界</a></td>
+                <td><a href="/course/02330840">中国美学史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02335200">庄子哲学</a></td>
+                <td><a href="/course/01630600">组织管理心理学</a></td>
+                <td><a href="/course/03538180">阿拉伯伊斯兰文化</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02332160">道教史</a></td>
+                <td><a href="/course/02330161">宗教学导论</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="D" class="course_table">
+        <h1>D类 历史学</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/02131080">18-19世纪欧洲</a></td>
+                <td><a href="/course/02131200">比较城市史：地图、形态与文化</a></td>
+                <td><a href="/course/02131400">埃及学专题</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02132050">大国崛起</a></td>
+                <td><a href="/course/02131450">当代印度史</a></td>
+                <td><a href="/course/02131230">二十世纪世界史</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131160">二十世纪中外关系史</a></td>
+                <td><a href="/course/02131320">二战以来影视中的两岸关系</a></td>
+                <td><a href="/course/03530180">古代东方文明</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02132680">韩国史通论</a></td>
+                <td><a href="/course/02131050">基督教文明史</a></td>
+                <td><a href="/course/02131340">近现代中日关系史</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02232300">考古学与古史重建</a></td>
+                <td><a href="/course/02335132">科学通史</a></td>
+                <td><a href="/course/02131460">拉美国家现代化进程研究</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02139080">罗马史</a></td>
+                <td><a href="/course/02131430">美国史通论</a></td>
+                <td><a href="/course/02138870">明清经济与社会</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131270">欧洲启蒙运动</a></td>
+                <td><a href="/course/02131220">欧洲文艺复兴</a></td>
+                <td><a href="/course/02132830">秦汉魏晋南北朝政治历程</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02131260">人类发展与环境变迁</a></td>
+                <td><a href="/course/02131490">日本及日本人论</a></td>
+                <td><a href="/course/01831760">世界电影史</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02130761">世界通史（上）</a></td>
+                <td><a href="/course/02130762">世界通史（下）</a></td>
+                <td><a href="/course/02335330">世界文明中的科学技术</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02231310">世界遗产概论</a></td>
+                <td><a href="/course/02530160">外国经济史</a></td>
+                <td><a href="/course/02431890">晚清对外关系的历史与人物</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02132640">文艺复兴经典名著选读</a></td>
+                <td><a href="/course/02131970">西方当代历史学流派</a></td>
+                <td><a href="/course/04332710">西方美术史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02131440">西方文化通论</a></td>
+                <td><a href="/course/02131250">西方文明史导论</a></td>
+                <td><a href="/course/04330043">西方音乐史</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131810">伊斯兰教与现代世界</a></td>
+                <td><a href="/course/02132710">艺术史</a></td>
+                <td><a href="/course/02132730">印度文明史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02131480">战后东亚政治发展</a></td>
+                <td><a href="/course/03730740">中俄文化交流史</a></td>
+                <td><a href="/course/02131310">中国传统官僚政治制度</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/04332210">中国电影史</a></td>
+                <td><a href="/course/02332336">中国佛教史</a></td>
+                <td><a href="/course/02138970">中国古代妇女史专题</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02130741">中国古代史（上）</a></td>
+                <td><a href="/course/02130742">中国古代史（下）</a></td>
+                <td><a href="/course/02231170">中国古代物质文化史</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131110">中国古代政治与文化</a></td>
+                <td><a href="/course/02138840">中国近代思想史</a></td>
+                <td><a href="/course/02132250">中国近代政治与外交</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01339320">中国历史地理</a></td>
+                <td><a href="/course/04330051">中国美术史</a></td>
+                <td><a href="/course/04330671">中国书法艺术理论与鉴赏</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02132750">中国通史 (古代部分)</a></td>
+                <td><a href="/course/02130750">中国通史 (近代部分)</a></td>
+                <td><a href="/course/01831330">中国图书出版史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/03032360">中国文化史</a></td>
+                <td><a href="/course/02138850">中国现代社会史</a></td>
+                <td><a href="/course/02130430">中华民国史专题</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02532590">中华人民共和国经济史</a></td>
+                <td><a href="/course/02130290">中华人民共和国史专题</a></td>
+                <td><a href="/course/03532260">中日文化交流史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02131410">中世纪西欧社会史</a></td>
+                <td><a href="/course/02233080">中西建筑比较</a></td>
+                <td><a href="/course/04031700">周易精读</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02332160">道教史</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="E" class="course_table">
+        <h1>E类 语言学、文学、艺术与美育</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/01832490">北京风物与传统文化</a></td>
+                <td><a href="/course/02032640">《论语》《孟子》导读</a></td>
+                <td><a href="/course/02033970">《庄子内篇》解读</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02034300">大学国文</a></td>
+                <td><a href="/course/03633710">禅与园林艺术</a></td>
+                <td><a href="/course/03634030">传记文学：经典人物研究</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/04332960">20世纪西方音乐</a></td>
+                <td><a href="/course/03634050">电影中的二十世纪外国文学</a></td>
+                <td><a href="/course/03530010">东方文学史</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/03530370">东南亚文化</a></td>
+                <td><a href="/course/02332141">东正教艺术</a></td>
+                <td><a href="/course/03634040">二十世纪欧美诗歌导读</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02131320">二战以来影视中的两岸关系</a></td>
+                <td><a href="/course/03530180">古代东方文明</a></td>
+                <td><a href="/course/02034500">古代小说名著导读</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02034470">国学经典讲论</a></td>
+                <td><a href="/course/02032630">汉语和汉语研究</a></td>
+                <td><a href="/course/01831610">汉语修辞学</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/04330881">基本乐理与管弦乐基础</a></td>
+                <td><a href="/course/02332042">基督教和中国文化</a></td>
+                <td><a href="/course/02032770">金庸小说研究</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04330111">经典昆曲欣赏</a></td>
+                <td><a href="/course/04330421">浪漫主义时代的欧洲音乐</a></td>
+                <td><a href="/course/02033010">老舍与现代中国文化</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02032240">鲁迅小说研究</a></td>
+                <td><a href="/course/02431560">美国文化与社会</a></td>
+                <td><a href="/course/03835440">美国政治演说中的历史文化评析</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02030330">民俗学</a></td>
+                <td><a href="/course/02039130">民俗研究</a></td>
+                <td><a href="/course/02034120">批评理论导论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03530190">日本文化艺术专题</a></td>
+                <td><a href="/course/03835340">莎士比亚名篇赏析</a></td>
+                <td><a href="/course/02039330">沈从文研究</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/01831760">世界电影史</a></td>
+                <td><a href="/course/03033270">视觉圣经—西方艺术中的基督教</a></td>
+                <td><a href="/course/02033000">台湾文学</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02034460">唐宋诗词名篇精读</a></td>
+                <td><a href="/course/02039030">文学概论</a></td>
+                <td><a href="/course/04630813">文学人文经典（近现代）</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04332490">西方歌剧简史与名作赏析</a></td>
+                <td><a href="/course/04332710">西方美术史</a></td>
+                <td><a href="/course/03634060">西方文学名著导读</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/04330043">西方音乐史</a></td>
+                <td><a href="/course/01339220">现当代建筑赏析</a></td>
+                <td><a href="/course/02031550">小说的艺术</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02132710">艺术史</a></td>
+                <td><a href="/course/04330688">艺术与审美</a></td>
+                <td><a href="/course/02431590">印度社会与文化</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03536240">印度宗教</a></td>
+                <td><a href="/course/01832760">英语新闻阅读</a></td>
+                <td><a href="/course/03834310">英语学术论文写作</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02033170">影片精读</a></td>
+                <td><a href="/course/04330550">影视鉴赏</a></td>
+                <td><a href="/course/04332541">优秀电视节目评析</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/03730740">中俄文化交流史</a></td>
+                <td><a href="/course/04332210">中国电影史</a></td>
+                <td><a href="/course/02033530">中国古代文化</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02033862">中国古代文学经典（二）</a></td>
+                <td><a href="/course/02033861">中国古代文学经典（一）</a></td>
+                <td><a href="/course/01339330">中国古典园林赏析</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02033850">中国古籍入门</a></td>
+                <td><a href="/course/04332350">中国流行音乐流变</a></td>
+                <td><a href="/course/04332470">中国美术概论</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/04330051">中国美术史</a></td>
+                <td><a href="/course/03033243">中国名著导读</a></td>
+                <td><a href="/course/04330671">中国书法艺术理论与鉴赏</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02034450">中国现代文学经典选讲</a></td>
+                <td><a href="/course/02032270">中国现代文学名著研究</a></td>
+                <td><a href="/course/02034040">中国现代文学与文化</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02039340">中国现代戏剧</a></td>
+                <td><a href="/course/03532260">中日文化交流史</a></td>
+                <td><a href="/course/04332881">中外美术创作比较</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/04331020">中外名曲赏析</a></td>
+                <td><a href="/course/02032340">中文工具书及古代典籍概要</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="F" class="course_table">
+        <h1>F类 社会发展</h1>
+        <table class="table_c">
+            <tr class="ji">
+                <td><a href="/course/01430950">地球环境与人类社会</a></td>
+                <td><a href="/course/12731050">环境材料导论</a></td>
+                <td><a href="/course/12731030">环境科学导论</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/12731060">环境伦理概论</a></td>
+                <td><a href="/course/00432266">环境生态学</a></td>
+                <td><a href="/course/01231130">矿产资源经济概论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/00333890">面向复杂性的系统思维</a></td>
+                <td><a href="/course/12731070">全球环境变化</a></td>
+                <td><a href="/course/03131760">人口资源环境社会学</a></td>
+            </tr>
+            <tr class="ou">
+                <td><a href="/course/02131260">人类发展与环境变迁</a></td>
+                <td><a href="/course/12731010">人类生存发展与环境保护</a></td>
+                <td><a href="/course/01536820">生态学导论</a></td>
+            </tr>
+            <tr class="ji">
+                <td><a href="/course/02231310">世界遗产概论</a></td>
+                <td><a href="/course/01534230">自然保护学</a></td>
+                <td><a href="/course/01231200">自然资源与社会发展</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        let t='{{t}}';
+        let a=document.getElementById('A');
+        let b=document.getElementById('B');
+        let c=document.getElementById('C');
+        let d=document.getElementById('D');
+        let e=document.getElementById('E');
+        let f=document.getElementById('F');
+        handle(t);
+        function handle(t){
+            a.style.display="none";
+            b.style.display="none";
+            c.style.display="none";
+            d.style.display="none";
+            e.style.display="none";
+            f.style.display="none";
+            eval(t.toLowerCase()).style.display="block";
+        }
+        let type_choose=document.getElementsByClassName('classtype_choose')[0];
+        let tabs=type_choose.children[0].children
+        for (let i = 0;i<tabs.length;i++){
+            tabs[i].onmouseover=function(){
+                handle(tabs[i].children[0].text);
+            };
+        };
+    </script>
+</div>
+<div class="bottom_bar">
+    <p>
+        <a class="link" href="mailto:xxx@xxx.com">反馈 </a>|<a class="link" href="/index.html" target="_blank">
+        加入我们 </a>|<a class="link" href="mailto:xxx@xxx.com" target="_blank"> 联系我们</a>
+    </p>
+    <p>
+        相关链接：<a class="link" href="http://course.pku.edu.cn" target="_blank"> 教学网 </a>|<a class="link"
+                                                                                          href="http://elective.pku.edu.cn"
+                                                                                          target="_blank"> 选课网 </a>|<a
+            class="link" href="http://lib.pku.edu.cn" target="_blank"> 图书馆 </a>|<a class="link"
+                                                                                   href="http://dean.pku.edu.cn"
+                                                                                   target="_blank"> 教务网</a>
+    </p>
+    <p>Copyright©brink 2017 地址：北京大学信息管理系</p>
+</div>
 </body>
 
 </html>
